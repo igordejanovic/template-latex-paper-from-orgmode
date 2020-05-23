@@ -8,8 +8,8 @@ def chop_off_header(s):
 
 
 def chop_off_footer(s):
-    assert s.count('\end{document}') == 1
-    return s.split('\end{document}')[0]
+    assert s.count(r'\end{document}') == 1
+    return s.split(r'\end{document}')[0]
 
 
 def extract_body(s):
@@ -20,7 +20,7 @@ def extract_body(s):
 
 def other_changes(s):
     # s = s.replace("section{", "section*{")
-    s = s.replace("£", "$\pounds$")
+    s = s.replace('£', r'$\pounds$')
     return s
 
 
