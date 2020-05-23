@@ -3,8 +3,8 @@ import sys
 
 
 def chop_off_header(s):
-    assert s.count(r'\tableofcontents') == 1
-    return s.split(r'\tableofcontents')[1]
+    assert s.count(r'\author{') == 1
+    return r'\author{{{}'.format(s.split(r'\author{')[1])
 
 
 def chop_off_footer(s):

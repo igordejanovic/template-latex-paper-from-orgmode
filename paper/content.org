@@ -1,3 +1,7 @@
+#+TITLE: Title -- template for orgmode latex production
+#+AUTHOR: Hans Fangohr, Max Albert, University of Southampton
+#+OPTIONS: toc:nil
+
 * Abstract                                                    :ignoreheading:
 \begin{abstract}
   This is an abstract abstract, in the sense of only providing a
