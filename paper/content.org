@@ -1,3 +1,14 @@
+* Abstract                                                    :ignoreheading:
+\begin{abstract}
+  This is an abstract abstract, in the sense of only providing a
+  virtual abstract, also known as the interface. Somebody will have to
+  provide an inherited class that provides the real abstract.
+
+  We have placed the abstract in the section with ~:ignoreheading:~ tag 
+  (please see \ref{sec:ignore-heading}). This way the abstract heading will
+  not be exported while the abstract is still collapsable in orgmode.
+\end{abstract}
+
 * Introduction
 
 Some introduction to the topic. Orgmode is cool, see http://orgmode.org fore details. URLs are converted into hyperrefs automatically (i.e. no need to use the \verb|\href{}{}| command).
@@ -29,6 +40,7 @@ There is a Makefile that automises all of these steps. It may be useful to run a
 Our document may well contain subsections. In fact, part of the joy of orgmode is that we can re-arrange sections and change their depth quite easily.
 
 ** Mention how to ignore a heading              :ignoreheading:
+   \label{sec:ignore-heading}
 
 Using the ~:ignoreheading:~ tag, we can use section headings which do
 not appear in the final document.
